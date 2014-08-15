@@ -39,12 +39,18 @@ Go to localhost:3000/administration for the administration console
 Things To Do
 ===
 
-Feel free to make whatever changes you like. Just push them back to your Git Hub branch so that we can have a look
-and we'll chat about them when we meet with you. What we're after is seeing if you can look at an app, work out how it works and
+Once you've made the requested changes, just push them back to your Git Hub branch so that we can have a look
+and we'll chat about them when we meet with you. What we're after is seeing if you can look at an app, figure out how it works and
 then make some changes to it. As long as your change adds (or fixes) something and you can justify and discuss what you did,
 then that will be great. No need to go overboard :)
 
-Here are some suggested tasks, however feel free to come up with your own:
+Here are the initial tasks that we'd like you to do:
+- Editing a product, variant or category in the administration doesn't work, why? Can you fix it? (There is more than one bug)
+- Change the category administration forms so they use simple_form
+- Add a way to create a new product
+- Add a way to add a product to a category - AJAX would be nice, but not necessary
+
+Once these are done, then feel free to pick from the list below or come up with your own:
 
 - http://localhost:3000/administration/products shows a list of all the'published' products, add a way of showing a list of products
 with other published statuses (draft, submitted, archived, deleted)
@@ -59,6 +65,8 @@ with other published statuses (draft, submitted, archived, deleted)
 - Add a login page for administration pages
 - Show which categories a product belongs to (think about published statuses)
 - Show which products belong to a category (think about published statuses)
-- Add a way to add a product to a category - AJAX would be nice, but not necessary
 - Add a way to create a new variant for a product
 - Add a way to edit a variant on a product page
+- Change to use Zurb foundation for the layout / responsive template
+- Find a way to fix these broken links, ie don't show an error page: http://localhost:3000/categories/asdf or http://localhost:3000/products/asdf or http://localhost:3000/asdf
+- Add a robots.txt (bonus if you can add the ability to exclude certain products from being crawled)
