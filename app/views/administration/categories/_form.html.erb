@@ -1,41 +1,14 @@
-<%= form_for([:administration, @category]) do |f| %>
+<%= simple_form_for [:administration, @category] do |f| %>
   <% if @category.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
-
-      <ul>
-      <% @category.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :url_segment %>
-    <%= f.text_field :url_segment %>
-  </div>
-  <div class="field">
-    <%= f.label :parent_category_id %>
-    <%= f.number_field :parent_category_id %>
-  </div>
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :meta_keywords %>
-    <%= f.text_field :meta_keywords %>
-  </div>
-  <div class="field">
-    <%= f.label :meta_description %>
-    <%= f.text_field :meta_description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.input :name, wrapper_html: { class: 'field' } %>
+  <%= f.input :url_segment, wrapper_html: { class: 'field' } %>
+  <%= f.input :parent_category_id, as: :integer, wrapper_html: { class: 'field' } %>
+  <%= f.input :description, as: :text, wrapper_html: { class: 'field' } %>
+  <%= f.input :meta_keywords, wrapper_html: { class: 'field' } %>
+  <%= f.input :meta_description, wrapper_html: { class: 'field' } %>
+  <%= f.button :submit %>
 <% end %>
