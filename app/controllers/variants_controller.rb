@@ -1,3 +1,3 @@
-class VariantsController < ShowController
-  
+class VariantsController < ShopController
+
 end
