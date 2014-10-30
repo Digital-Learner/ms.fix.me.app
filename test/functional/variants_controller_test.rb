@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class VariantsControllerTest < ActionController::TestCase
+class Administration::VariantsControllerTest < ActionController::TestCase
   setup do
     @variant = variants(:one)
   end
@@ -21,7 +21,7 @@ class VariantsControllerTest < ActionController::TestCase
       post :create, variant: { bay: @variant.bay, description: @variant.description, price: @variant.price, product_id: @variant.product_id, sku: @variant.sku, stock_level_reserved: @variant.stock_level_reserved, stock_level_total: @variant.stock_level_total, weight_in_grams: @variant.weight_in_grams }
     end
 
-    assert_redirected_to variant_path(assigns(:variant))
+    assert_redirected_to administration_variant_path(assigns(:variant))
   end
 
   test "should show variant" do
@@ -36,7 +36,7 @@ class VariantsControllerTest < ActionController::TestCase
 
   test "should update variant" do
     put :update, id: @variant, variant: { bay: @variant.bay, description: @variant.description, price: @variant.price, product_id: @variant.product_id, sku: @variant.sku, stock_level_reserved: @variant.stock_level_reserved, stock_level_total: @variant.stock_level_total, weight_in_grams: @variant.weight_in_grams }
-    assert_redirected_to variant_path(assigns(:variant))
+    assert_redirected_to administration_variant_path(assigns(:variant))
   end
 
   test "should destroy variant" do
@@ -44,6 +44,6 @@ class VariantsControllerTest < ActionController::TestCase
       delete :destroy, id: @variant
     end
 
-    assert_redirected_to variants_path
+    assert_redirected_to administration_variants_path
   end
 end

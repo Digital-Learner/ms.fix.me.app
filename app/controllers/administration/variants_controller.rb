@@ -60,7 +60,7 @@ class Administration::VariantsController < Administration::AdministrationControl
 
     respond_to do |format|
       if @variant.update_attributes(params[:variant])
-        format.html { redirect_to @variant, notice: 'Variant was successfully updated.' }
+        format.html { redirect_to administration_variant_url(@variant), notice: 'Variant was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
