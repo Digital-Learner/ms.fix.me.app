@@ -7,16 +7,16 @@ development:
   adapter: mysql2
   database: ms_fix_me_app_development
   encoding: utf8
-  username: msdev
-  password: password
+  username:
+  password:
   host: 127.0.0.1
 
 test: &test
   adapter: mysql2
   database: ms_fix_me_app_test
   encoding: utf8
-  username: msdev
-  password: password
+  username:
+  password:
   host: localhost
 
 cucumber:
