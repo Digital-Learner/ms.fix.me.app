@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CategoriesControllerTest < ActionController::TestCase
+class Administration::CategoriesControllerTest < ActionController::TestCase
   setup do
     @category = categories(:one)
   end
@@ -21,7 +21,7 @@ class CategoriesControllerTest < ActionController::TestCase
       post :create, category: { description: @category.description, meta_description: @category.meta_description, meta_keywords: @category.meta_keywords, name: @category.name, parent_category_id: @category.parent_category_id, published_status: @category.published_status, url_segment: @category.url_segment }
     end
 
-    assert_redirected_to category_path(assigns(:category))
+    assert_redirected_to administration_category_path(assigns(:category))
   end
 
   test "should show category" do
@@ -36,7 +36,7 @@ class CategoriesControllerTest < ActionController::TestCase
 
   test "should update category" do
     put :update, id: @category, category: { description: @category.description, meta_description: @category.meta_description, meta_keywords: @category.meta_keywords, name: @category.name, parent_category_id: @category.parent_category_id, published_status: @category.published_status, url_segment: @category.url_segment }
-    assert_redirected_to category_path(assigns(:category))
+    assert_redirected_to administration_category_path(assigns(:category))
   end
 
   test "should destroy category" do
@@ -44,6 +44,6 @@ class CategoriesControllerTest < ActionController::TestCase
       delete :destroy, id: @category
     end
 
-    assert_redirected_to categories_path
+    assert_redirected_to administration_categories_path
   end
 end
