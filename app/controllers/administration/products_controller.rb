@@ -60,7 +60,7 @@ class Administration::ProductsController < Administration::AdministrationControl
 
     respond_to do |format|
       if @product.update_attributes(params[:product])
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+        format.html { redirect_to administration_product_url(@product), notice: 'Product was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -76,7 +76,7 @@ class Administration::ProductsController < Administration::AdministrationControl
     @product.destroy
 
     respond_to do |format|
-      format.html { redirect_to products_url }
+      format.html { redirect_to administration_products_url }
       format.json { head :no_content }
     end
   end

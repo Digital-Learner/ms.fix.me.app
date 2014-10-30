@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ProductsControllerTest < ActionController::TestCase
+class Administration::ProductsControllerTest < ActionController::TestCase
   setup do
     @product = products(:one)
   end
@@ -21,7 +21,7 @@ class ProductsControllerTest < ActionController::TestCase
       post :create, product: { description: @product.description, meta_description: @product.meta_description, meta_keywords: @product.meta_keywords, name: @product.name, published_status: @product.published_status, strapline: @product.strapline, subcode: @product.subcode, url_segment: @product.url_segment }
     end
 
-    assert_redirected_to product_path(assigns(:product))
+    assert_redirected_to administration_product_path(assigns(:product))
   end
 
   test "should show product" do
@@ -36,7 +36,7 @@ class ProductsControllerTest < ActionController::TestCase
 
   test "should update product" do
     put :update, id: @product, product: { description: @product.description, meta_description: @product.meta_description, meta_keywords: @product.meta_keywords, name: @product.name, published_status: @product.published_status, strapline: @product.strapline, subcode: @product.subcode, url_segment: @product.url_segment }
-    assert_redirected_to product_path(assigns(:product))
+    assert_redirected_to administration_product_path(assigns(:product))
   end
 
   test "should destroy product" do
@@ -44,6 +44,6 @@ class ProductsControllerTest < ActionController::TestCase
       delete :destroy, id: @product
     end
 
-    assert_redirected_to products_path
+    assert_redirected_to administration_products_path
   end
 end
