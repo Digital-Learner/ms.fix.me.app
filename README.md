@@ -53,7 +53,7 @@ Here are the initial tasks that we'd like you to do:
 Once these are done, then feel free to pick from the list below or come up with your own:
 
 - Add the price for each variant on the public product page - DONE
-- Add a price range for all variants for each product in the 'product_tile' (ignore currency symbols)
+- Add a price range for all variants for each product in the 'product_tile' (ignore currency symbols) - DONE
 
 - http://localhost:3000/administration/products shows a list of all the'published' products, add a way of showing a list of products
 with other published statuses (draft, submitted, archived, deleted)

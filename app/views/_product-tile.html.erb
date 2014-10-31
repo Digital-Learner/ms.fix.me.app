@@ -9,6 +9,7 @@
 	</div>
 	<div class='strapline'>
 		<%= product.strapline %><br />
-		<%= pluralize(product.variants.size, 'variant') %>
+		<%= pluralize(product.variants.size, 'variant') %><br/>
+		<%= price_range(product) %>
 	</div>
 </div>
