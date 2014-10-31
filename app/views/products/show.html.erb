@@ -14,7 +14,8 @@
 				<div class='sku-and-description'>
 					<%= variant.sku %><br />
 					<%= variant.description %>
-					<small>(<%= variant.stock_level_available %> available)</small>
+					<small>(<%= variant.stock_level_available %> available)</small><br/>
+					Price: <%= variant.price %>
 				</div>
 				<div class='buy'>
 					<% if variant.buyable? %>

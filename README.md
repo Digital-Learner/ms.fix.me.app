@@ -52,13 +52,14 @@ Here are the initial tasks that we'd like you to do:
 
 Once these are done, then feel free to pick from the list below or come up with your own:
 
+- Add the price for each variant on the public product page - DONE
+- Add a price range for all variants for each product in the 'product_tile' (ignore currency symbols)
+
 - http://localhost:3000/administration/products shows a list of all the'published' products, add a way of showing a list of products
 with other published statuses (draft, submitted, archived, deleted)
 - Add a way that we can 'bulk archive' selected products on this page: http://localhost:3000/administration/products
 - Add a way of inserting a chunk of text on the home page that an administrator can edit
 - Add a way of creating a free text page, eg a contact us page that can be edited in administration
-- Add the price for each variant on the public product page
-- Add a price range for all variants for each product in the 'product_tile' (ignore currency symbols)
 - Add a way of uploading an image to a product or category
 - Are there any performance issues that need to be addressed, especially if the site had 10,000's of products - how can this be resolved?
 - Make the administration pages look better
