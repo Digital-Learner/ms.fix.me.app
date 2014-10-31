@@ -3,7 +3,7 @@
 The application 'approximates' an eCommerce site. It shows categories and products on the 'front end' and allows
 the site owner to update the descriptions etc in the 'back end'
 
-You can't add anything to your basket / cart - there isn't an order or basket model. Basically all that you can do at the 
+You can't add anything to your basket / cart - there isn't an order or basket model. Basically all that you can do at the
 moment is browse around the site.
 
 We just want you to add something (or fix something) to the application and show us what you did and then explain why / how.
@@ -45,8 +45,8 @@ then make some changes to it. As long as your change adds (or fixes) something a
 then that will be great. No need to go overboard :)
 
 Here are the initial tasks that we'd like you to do:
-- Editing a product, variant or category in the administration doesn't work, why? Can you fix it? (There is more than one bug)
-- Change the category administration forms so they use simple_form
+- Editing a product, variant or category in the administration doesn't work, why? Can you fix it? (There is more than one bug) DONE
+- Change the category administration forms so they use simple_form DONE
 - Add a way to create a new product
 - Add a way to add a product to a category - AJAX would be nice, but not necessary
 
