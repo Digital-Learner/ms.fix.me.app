@@ -58,8 +58,8 @@ Once these are done, then feel free to pick from the list below or come up with 
 - http://localhost:3000/administration/products shows a list of all the'published' products, add a way of showing a list of products
 with other published statuses (draft, submitted, archived, deleted) - DONE
 
+- Show which products belong to a category (think about published statuses) - DONE
 - Show which categories a product belongs to (think about published statuses)
-- Show which products belong to a category (think about published statuses) - WIP
 
 - Add a way that we can 'bulk archive' selected products on this page: http://localhost:3000/administration/products
 
