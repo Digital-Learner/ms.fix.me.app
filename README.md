@@ -56,18 +56,27 @@ Once these are done, then feel free to pick from the list below or come up with 
 - Add a price range for all variants for each product in the 'product_tile' (ignore currency symbols) - DONE
 
 - http://localhost:3000/administration/products shows a list of all the'published' products, add a way of showing a list of products
-with other published statuses (draft, submitted, archived, deleted)
-- Add a way that we can 'bulk archive' selected products on this page: http://localhost:3000/administration/products
-- Add a way of inserting a chunk of text on the home page that an administrator can edit
-- Add a way of creating a free text page, eg a contact us page that can be edited in administration
-- Add a way of uploading an image to a product or category
-- Are there any performance issues that need to be addressed, especially if the site had 10,000's of products - how can this be resolved?
-- Make the administration pages look better
-- Add a login page for administration pages
+with other published statuses (draft, submitted, archived, deleted) - DONE
+
 - Show which categories a product belongs to (think about published statuses)
 - Show which products belong to a category (think about published statuses)
+
+- Add a way that we can 'bulk archive' selected products on this page: http://localhost:3000/administration/products
+
+- Add a way of inserting a chunk of text on the home page that an administrator can edit
+- Add a way of creating a free text page, eg a contact us page that can be edited in administration
+
+- Add a way of uploading an image to a product or category
+
+- Are there any performance issues that need to be addressed, especially if the site had 10,000's of products - how can this be resolved?
+
+- Make the administration pages look better
+- Add a login page for administration pages
+
 - Add a way to create a new variant for a product
 - Add a way to edit a variant on a product page
+
 - Change to use Zurb foundation for the layout / responsive template
+
 - Find a way to fix these broken links, ie don't show an error page: http://localhost:3000/categories/asdf or http://localhost:3000/products/asdf or http://localhost:3000/asdf
 - Add a robots.txt (bonus if you can add the ability to exclude certain products from being crawled)

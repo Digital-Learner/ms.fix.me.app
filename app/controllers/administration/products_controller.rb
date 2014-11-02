@@ -2,11 +2,16 @@ class Administration::ProductsController < Administration::AdministrationControl
   # GET /products
   # GET /products.json
   def index
-    @products = Product.published
+    if params[:published_status]
+      @products = Product.find_all_by_published_status(params[:published_status])
+    else
+      @products = Product.published
+    end
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
+      format.js
     end
   end
 
