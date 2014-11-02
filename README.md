@@ -59,7 +59,7 @@ Once these are done, then feel free to pick from the list below or come up with 
 with other published statuses (draft, submitted, archived, deleted) - DONE
 
 - Show which categories a product belongs to (think about published statuses)
-- Show which products belong to a category (think about published statuses)
+- Show which products belong to a category (think about published statuses) - WIP
 
 - Add a way that we can 'bulk archive' selected products on this page: http://localhost:3000/administration/products
 

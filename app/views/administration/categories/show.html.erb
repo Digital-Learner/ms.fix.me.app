@@ -35,6 +35,22 @@
   <%= @category.meta_description %>
 </p>
 
+<hr/>
+
+<div>
+  <h4>Products:</h4>
+  <% if @products.any? %>
+    <ul>
+      <% @products.each do |product| %>
+        <li><%= link_to product.name, administration_product_path(product.id) %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <hr/>
+</div>
+
+
+
 <%= render :partial => 'administration/published_status_actions', :locals => {:model => @category } %>
 
 <%= link_to 'Edit', edit_administration_category_path(@category) %> |
