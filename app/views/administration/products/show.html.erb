@@ -55,6 +55,10 @@
   <hr/>
 </div>
 
+<div class='images'>
+  <%= image_tag @product.picture.url if @product.picture? %>
+</div>
+
 <%= render :partial => 'administration/published_status_actions', :locals => {:model => @product } %>
 
 <%= link_to 'Edit', edit_administration_product_path(@product) %> |
