@@ -40,6 +40,21 @@
   <%= @product.meta_description %>
 </p>
 
+
+<hr/>
+
+<div>
+  <h4>Categories:</h4>
+  <% if @categories.any? %>
+    <ul>
+      <% @categories.each do |category| %>
+        <li><%= link_to category.name, administration_category_path(category.id) %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <hr/>
+</div>
+
 <%= render :partial => 'administration/published_status_actions', :locals => {:model => @product } %>
 
 <%= link_to 'Edit', edit_administration_product_path(@product) %> |

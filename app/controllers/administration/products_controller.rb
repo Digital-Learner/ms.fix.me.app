@@ -19,6 +19,7 @@ class Administration::ProductsController < Administration::AdministrationControl
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
+    @categories = @product.categories
 
     respond_to do |format|
       format.html # show.html.erb
