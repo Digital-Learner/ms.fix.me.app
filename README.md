@@ -61,12 +61,13 @@ with other published statuses (draft, submitted, archived, deleted) - DONE
 - Show which products belong to a category (think about published statuses) - DONE
 - Show which categories a product belongs to (think about published statuses) - DONE
 
+- Add a way of uploading an image to a product or category - DONE
+
+
 - Add a way that we can 'bulk archive' selected products on this page: http://localhost:3000/administration/products
 
 - Add a way of inserting a chunk of text on the home page that an administrator can edit
 - Add a way of creating a free text page, eg a contact us page that can be edited in administration
-
-- Add a way of uploading an image to a product or category
 
 - Are there any performance issues that need to be addressed, especially if the site had 10,000's of products - how can this be resolved?
 
